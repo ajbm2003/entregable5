@@ -80,7 +80,7 @@ const Pokedex = () => {
         <p className="sm:text-lg text-base font-semibold">
           Welcome
           <span className="text-red-500"> {trainerName}</span>
-          , here you can find your favorte pokemon!
+          , here you can find your favorite pokemon!
         </p>
         <form onSubmit={handleSubmit} className="flex">
           <div>
