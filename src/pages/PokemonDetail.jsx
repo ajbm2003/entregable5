@@ -63,8 +63,8 @@ const PokemonDetail = () => {
               alt=""
             />
           </header>
-          <h3>#{pokemon?.id}</h3>
-          <h2 className="font-semibold text-lg">
+          <h3 className="mt-[50px]">#{pokemon?.id}</h3>
+          <h2 className="p-4 font-semibold text-lg">
             ---------- {pokemon?.name} -----------
           </h2>
           <section className="grid grid-cols-2">
