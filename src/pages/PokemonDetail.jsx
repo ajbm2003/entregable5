@@ -53,7 +53,7 @@ const PokemonDetail = () => {
         </div>
       </header>
       <main className="py-10 px-2 text-center capitalize ">
-        <article className="max-w-[500px] mx-auto shadow-lg capitalize rounded-md text-center">
+        <article className="max-w-[500px] mx-auto shadow-2xl capitalize rounded-md text-center">
           <header
             className={`${bgByType[pokemon?.types[0].type.name]} h-[160px]`}
           >
@@ -85,7 +85,7 @@ const PokemonDetail = () => {
             <div>
               <div>abilities</div>
               <div>
-                <ul className="p-4 flex gap-1 justify-center">
+                <ul className="p-4 flex gap-1 justify-center flex-wrap">
                   {pokemon?.abilities.map((ability) => (
                     <li
                       className='border-2 rounded-md px-4 py-2'
@@ -116,6 +116,20 @@ const PokemonDetail = () => {
               ))}
             </ul>
           </section>
+        </article>
+        <article className="mt-[20px] flex-col max-w-[500px] mx-auto shadow-2xl capitalize rounded-md">
+          <h3 className="text-start text-[20px] font-semibold p-4">Movements</h3>
+          <ul className=" flex justify-center flex-wrap gap-2 p-2 ">
+            {
+              pokemon?.moves.map((move) => (
+                <li
+                  className='border-2 rounded-xl p-2 bg-slate-300'
+                >
+                  {move.move.name}
+                </li>))
+            }
+          </ul>
+          
         </article>
       </main>
     </>
